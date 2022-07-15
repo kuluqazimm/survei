@@ -265,13 +265,25 @@ ul a{
     opacity: 1;
 }
 
-.limit-time-modal {
+.limit-time-modal{
     display: flex;
     gap: 8px;
     width: 100px;
     height: 24px;
     background-color: rgba(0, 177, 64, 0.08);
     color: #00B140;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.limit-time-modal #merah{
+    display: flex;
+    gap: 8px;
+    width: 100px;
+    height: 24px;
+    background-color: rgba(177, 0, 0, 0.08);
+    color: #B10000;
     border-radius: 5px;
     align-items: center;
     font-size: 12px;
