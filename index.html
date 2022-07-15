@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="assets/img/logo-qodr.png" alt="logo-qodr" width="138" height="32">
+            </div>
+            <ul>
+                <li class="list-menu">
+                    <a href="">
+                        <img src="assets/Menu/profil.svg">Profil</a>
+                </li>
+                <li class="list-menu">
+                    <a href="">
+                        <img src="assets/Menu/tahfidz.svg">Tahfidz</a>
+                </li>
+                <li class="list-menu">
+                    <a href="">
+                        <img src="assets/Menu/roadmap.svg">Roadmap</a>
+                </li>
+                <li class="list-menu">
+                    <a href="">
+                        <img src="assets/Menu/portofolio.svg">Portofolio
+                    </a>
+                </li>
+                <li class="list-menu survey-active">
+                    <img src="assets/Menu/survey.svg">Survei
+                </li>
+                <li class="list-menu">
+                    <a href="">
+                        <img src="assets/Menu/edit.svg">Izin
+                    </a>
+                </li>
+                <li class="list-menu">
+                    <a href="">
+                        <img src="assets/Menu/pengaturan.svg">Pengaturan
+                    </a>
+                </li>
+                <li class="tombol-logout">
+                    <img src="assets/Menu/Logout.svg">
+                    <span>Keluar</span>
+                </li>
+            </ul>
+        </nav>       
+        
+        <div class="main-content">
+            <header class="mobile-header">
+                <div class="logo-qodr-mobile">
+                    <img src="assets/img/logo-qodr.svg" width="104" height="24">
+                    <img src="assets/img/hamburger.svg" alt="menu">
+                </div>
+            </header>
+            <div class="main-header">
+                <h1>Survei</h1>
+            </div>
+            <div class="task-survei">
+                <h2 class="child-header">
+                    Task Survei
+                </h2>
+                <div class="card" id="merah">
+                    <div class="card-item">
+                        <h3>Daily Sunnah Practice</h3>
+                        <p class="card-text">30 Mei 2025</p>
+                        <div class="text-danger">
+                            <span>Cepat Kerjakan!</span>
+                            <div class="limit-time-danger-box">
+                                <img src="assets/img/bx_time.svg">
+                                <p> 6 jam lagi</p>
+                            </div>
+                        </div>
+                        <div class="kerjakan">
+                            <a href="#">Kerjakan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-pagination">
+                    <img src="assets/img/slide.svg">
+                </div>
+                <div class="card" id="hijau">
+                    <div class="card-item">
+                        <h3>Daily Sunnah Practice</h3>
+                        <p class="card-text">31 Mei 2025</p>
+                        <div class="text-alert">
+                            <span>Cepat Kerjakan!</span>
+                            <div class="limit-time">
+                                <img src="assets/img/gr_time.svg">
+                                <p> 24 jam lagi</p>
+                            </div>
+                        </div>
+                        <div class="kerjakan">
+                            <label for="checkbox" class="btn btn-show">Kerjakan</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- sidebar mobile -->
+        <nav class="mobile-sidebar mobile-sidebar-toggle">
+    
+            <div class="header-mobile-sidebar">
+                <h3>Menu</h3>
+                <img src="assets/img/x-btn.svg" alt="silang">
+            </div>
+            <ul class="sidebar-item">
+                        <li class="list-menu">
+                            <a href="">
+                                <img src="assets/Menu/profil.svg">Profil</a>
+                        </li>
+                        <li class="list-menu">
+                            <a href="">
+                                <img src="assets/Menu/tahfidz.svg">Tahfidz</a>
+                        </li>
+                        <li class="list-menu">
+                            <a href="">
+                                <img src="assets/Menu/roadmap.svg">Roadmap</a>
+                        </li>
+                        <li class="list-menu">
+                            <a href="">
+                                <img src="assets/Menu/portofolio.svg">Portofolio
+                            </a>
+                        </li>
+                        <li class="list-menu survey-active">
+                            <img src="assets/Menu/survey.svg">Survei
+                        </li>
+                        <li class="list-menu">
+                            <a href="">
+                                <img src="assets/Menu/edit.svg">Izin
+                            </a>
+                        </li>
+                        <li class="list-menu">
+                            <a href="">
+                                <img src="assets/Menu/pengaturan.svg">Pengaturan
+                            </a>
+                        </li>
+                        <li class="tombol-logout">
+                            <img src="assets/Menu/Logout.svg">
+                            <span>Keluar</span>
+                        </li>
+            </ul>
+        </nav>
+        
+        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" hidden>
+        <div class="modal-container">
+            <div class="line-top">
+                    <div class="green-line"></div>
+            </div>
+            <div class="modal">
+                <div class="modal-header">
+                    <h1>Daily Sunnah Practice</h1>
+                    <label for="checkbox" class="btn-close">
+                        <img src="assets/img/silang.svg">
+                    </label>
+                </div>
+                    <div class="tanggal-limit">
+                        <p class="card-text-tanggal">31 Mei 2025</p>
+                        <div class="limit-time-modal">
+                            <img src="assets/img/jam-normal.png" alt="" width="16" height="16">
+                            <p> 24 jam lagi</p>
+                        </div>
+                    </div>
+                    <div class="soal">
+                        <h3 class="nomor-soal">3.</h3>
+                        <h3>Tilawah Terlaksana?</h3>
+                        <p>“Siapa yang membaca satu huruf dari Kitabullah, maka baginya satu kebaikan. Satu kebaikan itu dibalas
+                            dengan sepuluh yang semisal. Aku tidak katakan alif laam miim itu satu huruf. Namun alif itu satu
+                            huruf, laam itu satu huruf, dan miim itu satu huruf.”(HR. Tirmidzi, no. 2910. Tirmidzi mengatakan
+                            hadits ini hasan sahih. Al-Hafizh Abu Thahir mengatakan bahwa sanad hadits ini hasan)</p>
+                    </div>
+                    <div class="jawaban">
+                        <div class="jawaban-box-iya">
+                            <div class="iya-box">I</div>
+                            <p>Iya</p>
+                            <div class="checklist">
+                                <img src="assets/img/centang-hijau.png" width="24" height="24">
+                            </div>
+                        </div>
+                        <div class="jawaban-box-tidak">
+                            <div class="tidak-box">T</div> Tidak
+                        </div>
+                    </div>
+                    <div class="oke-box">
+                        OK
+                    </div>
+                    <div class="modal-footer">
+                        <div class="jumlah-pertanyaan">
+                            3 dari 9 Pertanyaan
+                        </div>
+                        <div class="pagination">
+                            <img src="assets/img/page-kanan.png" alt=""><img src="assets/img/page-kiri.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="styles/js/script.js"></script>
+
+</body>
+
+</html>
