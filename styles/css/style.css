@@ -547,29 +547,8 @@ ul a{
     }
 
     /* toggle menu */
-
-    #menu-button{
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        overflow: hidden;
-    }
-
-    #menu-label{
-        position: relative;
-        display: block;
-        cursor: pointer;
-    }
-
-    #menu-checkbox{
+    .modal-container{
         display: none;
     }
-
-    #hamburger{
-        right: 0;
-        width: 100%;
-        position: absolute;
-    }
-
 }
 
