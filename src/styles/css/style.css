@@ -85,7 +85,7 @@ ul a{
     background-color: #F9F9F9;
     width: 176px;
     height: 48px;
-    top: 95vh;
+    margin-top: 160px;
     border-radius: 4px;
     color: #212322;
     display: flex;
@@ -572,7 +572,6 @@ ul a{
     .tombol-logout{
         width: 240px;
         height: 48px;
-        margin-top: 30px;
     }
     .modal-container #mobile{
         width: 100%;
